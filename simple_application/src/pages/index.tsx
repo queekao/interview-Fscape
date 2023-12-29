@@ -1,17 +1,13 @@
-import React, { ReactElement, useEffect } from 'react'
+import React, { ReactElement } from 'react'
 import Meta from '../components/Meta'
-import { useTheme } from '@mui/material/styles'
 import {
   CardWrapper,
-  VoteCard
+  VoteCard,
+  CardDepiction,
+  VoteResults
 } from '../components/CustomMuiElement/CardElement'
-import CustomLinearProgressBar from '../components/CustomMuiElement/CustomLinearProgressBar'
 
 export default function HomePage(): ReactElement {
-  const theme = useTheme()
-  useEffect(() => {
-    console.log(theme)
-  }, [theme])
   return (
     <>
       <Meta
@@ -20,17 +16,13 @@ export default function HomePage(): ReactElement {
         name="Lorem ipsum dolor sit amet"
       />
       <CardWrapper
-        children={
-          <>
-            <VoteCard />
-          </>
-        }
+        children={<VoteCard />}
         style={{ marginTop: '2.6rem', marginBottom: '1.6rem' }}
       />
-      <CustomLinearProgressBar
-        type="success"
-        title="support"
-        voteCount={9000000}
+      <CardWrapper children={<VoteResults />} />
+      <CardWrapper
+        style={{ marginTop: '1.6rem' }}
+        children={<CardDepiction />}
       />
     </>
   )

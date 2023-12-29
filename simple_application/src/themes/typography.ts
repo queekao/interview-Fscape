@@ -1,7 +1,3 @@
-/**
- * Typography used in theme
- * @param {JsonObject} theme theme customization object
- */
 import { ThemeOption } from './themeOptions'
 export default function themeTypography(theme: ThemeOption): any {
   return {
@@ -16,12 +12,14 @@ export default function themeTypography(theme: ThemeOption): any {
       fontWeight: 600,
       color: theme.colors.textDark,
       fontSize: '1.2rem',
-      whiteSpace: 'break-spaces'
+      whiteSpace: 'break-spaces',
+      lineHeight: '1.666em'
     },
     h2: {
       fontSize: '1.4rem',
       color: theme.colors.textDark,
       fontWeight: 600,
+      lineHeight: '1.714em',
       whiteSpace: 'break-spaces'
     },
     h1: {
@@ -30,23 +28,18 @@ export default function themeTypography(theme: ThemeOption): any {
       fontWeight: 600,
       whiteSpace: 'break-spaces'
     },
-    title: {
-      fontSize: '1.4rem',
-      color: theme.colors.textDark,
-      fontWeight: 600,
-      whiteSpace: 'break-spaces'
-    },
     subtitle1: {
       fontWeight: 400,
       color: theme.colors.textDark,
       fontSize: '1.2rem',
-      whiteSpace: 'break-spaces'
+      whiteSpace: 'break-spaces',
+      lineHeight: '1.666em'
     },
     body1: {
-      fontSize: '1.2rem',
+      fontSize: '1.4rem',
       color: theme.colors.textDark,
       fontWeight: 400,
-      lineHeight: '1.334em'
+      lineHeight: '1.714em'
     },
     body2: {
       fontSize: '1.0rem',

@@ -12,7 +12,6 @@ const CardSx = () => ({
   minWidth: 300,
   boxShadow: 'none',
   borderRadius: '12px',
-  // width: '88rem',
   '& .MuiCardContent-root': {
     padding: '0 !important'
   }

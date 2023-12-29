@@ -16,6 +16,7 @@ export const Colors = {
   black: '#2A2B38',
   // grey
   grey100: '#DCDDE5',
+  grey400: '#B9BACC',
   //gradient
   //shadow
   shadow100: '0px 4px 4px rgba(0, 0, 0, 0.25)',

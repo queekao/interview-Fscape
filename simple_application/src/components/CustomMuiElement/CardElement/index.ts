@@ -1,3 +1,5 @@
 import { CardWrapper } from './CardWrapper'
 import VoteCard from './VoteCard'
-export { CardWrapper, VoteCard }
+import CardDepiction from './CardDepiction'
+import VoteResults from './VoteResults'
+export { CardWrapper, VoteCard, CardDepiction, VoteResults }

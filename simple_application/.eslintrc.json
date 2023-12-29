@@ -10,10 +10,7 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:@next/next/recommended"
   ],
-  "plugins": [
-    "@typescript-eslint",
-    "react-hooks"
-  ],
+  "plugins": ["@typescript-eslint", "react-hooks"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -31,9 +28,7 @@
       "error",
       {
         "allowArgumentsExplicitlyTypedAsAny": true,
-        "allowedNames": [
-          "Component"
-        ],
+        "allowedNames": ["Component"],
         "allowHigherOrderFunctions": true,
         "allowTypedFunctionExpressions": true
       }
@@ -55,13 +50,7 @@
         "args": "after-used"
       }
     ],
-    "quotes": [
-      "error",
-      "single"
-    ],
-    "semi": [
-      "error",
-      "never"
-    ]
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"]
   }
 }

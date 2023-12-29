@@ -1,7 +1,3 @@
-/**
- * Color intention that you want to used in your theme
- * @param {JsonObject} theme Theme customization object
- */
 import { ThemeOption } from './themeOptions'
 export default function themePalette(theme: ThemeOption): any {
   return {
@@ -20,7 +16,8 @@ export default function themePalette(theme: ThemeOption): any {
       black: theme.colors?.black
     },
     grey: {
-      100: theme.colors.grey100
+      100: theme.colors.grey100,
+      400: theme.colors.grey400
     },
     shadow: {},
 

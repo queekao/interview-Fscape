@@ -5,6 +5,7 @@ export const ButtonSuccessSx = (theme: Theme): SxProps<Theme> => ({
   borderRadius: '8px',
   background: theme.palette.success.main,
   color: theme.palette.common.white,
+  lineHeight: 1.6666,
   padding: '1rem 2.5rem',
   fontSize: '1.2rem',
   width: '10rem',
@@ -15,6 +16,7 @@ export const ButtonRejectSx = (theme: Theme): SxProps<Theme> => ({
   borderRadius: '8px',
   background: theme.palette.error.main,
   color: theme.palette.common.white,
+  lineHeight: 1.6666,
   padding: '1rem 2.5rem',
   fontSize: '1.2rem',
   width: '10rem',
@@ -24,6 +26,7 @@ export const ButtonBackSx = (theme: Theme): SxProps<Theme> => ({
   fontSize: '1.2rem',
   color: theme.palette.common.black,
   textTransform: 'capitalize',
+
   '& .children': {
     fontWeight: 400,
     marginLeft: '0.8rem'
