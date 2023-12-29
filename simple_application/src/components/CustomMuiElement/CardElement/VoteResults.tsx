@@ -71,7 +71,7 @@ const VoteResults: React.FC = () => {
               View all votes
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={6} sx={{ paddingLeft: '15.6rem !important' }}>
+          <Grid item xs={12} sm={6} sx={{ paddingLeft: '12.6rem !important' }}>
             <div className="colItem">
               <Typography variant="subtitle1">Quorum</Typography>
               <Typography variant="h3">
