@@ -1,6 +1,6 @@
 # Interview-Fscape
 
-This is a simple of Fscape interview
+This is a simple application of Fscape interview
 
 ## Frontend Configuration
 
