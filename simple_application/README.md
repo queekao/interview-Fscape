@@ -1,7 +1,6 @@
 # Interview-Fscape
 
-This is a frontend of telephone booth. The reason why I did not separate from server is because I might use lambda to achieve server-side rendering through API gateway.
-Therefore, I configure the whole system together
+This is a simple of Fscape interview
 
 ## Frontend Configuration
 
@@ -84,3 +83,7 @@ yarn release
 ### Start and dev difference
 
 next dev starts the Next.js application in development mode with hot-reloading, detailed error reporting, and more debugging capabilities. next start runs the application in production mode, optimized for performance and efficiency
+
+### Website link
+
+https://interview-fscape.vercel.app/
