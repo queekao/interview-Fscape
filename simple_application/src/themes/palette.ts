@@ -6,26 +6,26 @@ import { ThemeOption } from './themeOptions'
 export default function themePalette(theme: ThemeOption): any {
   return {
     // mode: theme?.customization?.navType || '', // To define dark or light
-    primary: {
-      light: theme.colors?.primaryLight,
-      main: theme.colors?.primaryMain
+    success: {
+      light: theme.colors?.successLight,
+      main: theme.colors?.successMain
     },
-    secondary: {
-      light: theme.colors?.secondaryLight,
-      main: theme.colors?.secondaryMain
+    error: {
+      light: theme.colors?.errorLight,
+      main: theme.colors?.errorMain
       // dark: theme.colors?.secondaryDark,
     },
-    shadow: {
-      100: theme.colors?.shadow100,
-      200: theme.colors?.shadow200
-    },
-
-    grey: {
+    common: {
       white: theme.colors?.white,
-      dark: theme.colors?.dark
+      black: theme.colors?.black
     },
+    grey: {
+      100: theme.colors.grey100
+    },
+    shadow: {},
+
     text: {
-      primary: theme.colors.dark
+      primary: theme.colors.black
     }
   }
 }

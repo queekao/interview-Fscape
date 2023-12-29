@@ -1,20 +1,21 @@
 export const Colors = {
   paper: '#ffffff',
 
-  // primary
-  primaryLight: '#15B48E40',
-  primaryMain: '#15B48E',
-  // primaryDark: '',
-  primary200: '#48DA82',
+  // success
+  successLight: '#48DA82',
+  successMain: '#15B48E',
+  // successDark: '',
 
-  // secondary
-  secondaryLight: '#EF646140',
-  secondaryMain: '#EF6461',
+  // error
+  errorLight: '#EF646140',
+  errorMain: '#EF6461',
   // secondaryDark: '',
 
-  // grey
+  // common
   white: '#FFFFFF',
-  dark: '#2A2B38',
+  black: '#2A2B38',
+  // grey
+  grey100: '#DCDDE5',
   //gradient
   //shadow
   shadow100: '0px 4px 4px rgba(0, 0, 0, 0.25)',
