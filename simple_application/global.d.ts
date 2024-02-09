@@ -1,5 +1,7 @@
 import { ReactNode } from 'react'
 
-export interface ChildrenProps {
-  children: ReactNode
+declare global {
+  interface ChildrenProps {
+    children: ReactNode
+  }
 }

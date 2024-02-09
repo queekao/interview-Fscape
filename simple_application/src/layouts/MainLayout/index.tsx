@@ -10,11 +10,8 @@ const MainSx = () => ({
   minHeight: '100vh',
   background: '#F6F6FD'
 })
-interface LayoutProps {
-  children: React.ReactNode
-}
 
-const MainLayout: React.FC<LayoutProps> = ({ children }) => {
+const MainLayout: React.FC<ChildrenProps> = ({ children }) => {
   const theme = useTheme()
 
   return (

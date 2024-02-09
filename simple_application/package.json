@@ -6,6 +6,7 @@
     "node": ">=12.22.0"
   },
   "scripts": {
+    "prepare": "husky install",
     "dev:local": "NEXT_PUBLIC_ENV=local next dev -p 3005",
     "build": "yarn prettier && next build",
     "start": "next start -p 3005",
