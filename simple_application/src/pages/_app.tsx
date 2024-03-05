@@ -1,21 +1,46 @@
-import { ReactElement } from 'react'
+import { ReactElement, Suspense } from 'react'
 import './globals.css'
 
 import type { AppProps } from 'next/app'
-import { StyledEngineProvider, ThemeProvider } from '@mui/material'
+import {
+  StyledEngineProvider,
+  ThemeProvider,
+  Backdrop,
+  CircularProgress
+} from '@mui/material'
 import { theme } from '../themes'
 import MainLayout from '../layouts/MainLayout'
 import { Header } from '../components/Header'
+import dynamic from 'next/dynamic'
+import { useRouter } from 'next/router'
 
-export default function App({ Component, pageProps }: AppProps): ReactElement {
-  const AnyComponent = Component as any
+export default function App({ pageProps }: AppProps): ReactElement {
+  // const AnyComponent = Component as any
+  const router = useRouter()
+  const { pathname } = router
+  const AnyComponent = dynamic(
+    () => (pathname === '/test' ? import('./test') : import('./index')),
+    {
+      loading: () => (
+        <Backdrop
+          sx={{ color: '#fff', zIndex: theme => theme.zIndex.drawer + 1 }}
+          open={true}
+        >
+          <CircularProgress color="inherit" />
+        </Backdrop>
+      ),
+      suspense: true
+    }
+  )
   return (
     <>
       <StyledEngineProvider injectFirst>
         <ThemeProvider theme={theme()}>
           <MainLayout>
             <Header />
-            <AnyComponent {...pageProps} />
+            <Suspense>
+              <AnyComponent {...pageProps} />
+            </Suspense>
           </MainLayout>
         </ThemeProvider>
       </StyledEngineProvider>
