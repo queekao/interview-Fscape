@@ -15,7 +15,6 @@ import dynamic from 'next/dynamic'
 import { useRouter } from 'next/router'
 
 export default function App({ pageProps }: AppProps): ReactElement {
-  // const AnyComponent = Component as any
   const router = useRouter()
   const { pathname } = router
   const AnyComponent = dynamic(
