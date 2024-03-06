@@ -10,7 +10,10 @@ interface Link {
 
 export default async (req: any, res: any): Promise<void> => {
   // An array with your links
-  const links: Link[] = [{ url: '/', changefreq: 'daily', priority: 1 }]
+  const links: Link[] = [
+    { url: '/', changefreq: 'daily', priority: 1 },
+    { url: '/test', changefreq: 'daily', priority: 0.1 }
+  ]
 
   // Create a stream to write to with your hostname
   const stream = new SitemapStream({ hostname: `https://${req.headers.host}` })
