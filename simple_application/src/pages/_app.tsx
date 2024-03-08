@@ -32,7 +32,6 @@ export default function App({ pageProps }: AppProps): ReactElement {
       suspense: true
     }
   )
-  new RTCPeerConnection({})
 
   return (
     <>
