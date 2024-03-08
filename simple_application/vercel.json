@@ -21,7 +21,7 @@
                 },
                 {
                     "key": "Permissions-Policy",
-                    "value": "geolocation=(self 'https://interview-fscape.vercel.app'), microphone=(self 'https://interview-fscape.vercel.app')"
+                    "value": "geolocation=(self), microphone=(self)"
                 }
             ]
         }
